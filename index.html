@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <h2 class="custom-color text-center mt-5">Money Bank</h2>
+    </header>
+    <main class="container gx-3 mt-5 ">
+
+        <div class="row">
+            <section class="col-lg-6 col-xl-6 col-md-6    ">
+                <img class=" w-100 h-100" src="./img/pic.jpg" alt="">
+            </section>
+            <section class="col-lg-6 col-xl-6 col-md-6   ">
+                <div class="form-style-3">
+                    <form>
+                        <fieldset>
+                            <h6 class="text-center">income</h6>
+                            <label for="field1"><span>income <span class="required">:</span></span><input type="text"
+                                    id="income-input" class="input-field" name="field1" value="" /></label>
+                            <h6 class="text-center"> Expenses</h6>
+                            <label for="field2"><span>Food <span class="required">:</span></span><input type="text"
+                                    id="food-input" class="input-field" name="field2" value="" /></label>
+                            <label for="field3"><span>Rent <span class="required">:</span></span><input type="text"
+                                    id="rent-input" class="input-field" name="field3" value="" /></label>
+                            <label for="field3"><span>Clothes <span class="required">:</span></span><input type="text"
+                                    id="clothes-input" class="input-field" name="field3" value="" /></label>
+
+                        </fieldset>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button id="calculate-btn" class="btn btn-primary" type="button">Calculate</button>
+
+                        </div>
+                        <h5 class="text-center">Total Expenses:<span id="expenses-total">0</span> </h5>
+                        <h5 class="text-center">Balance:<span id="balance-total">0</span></h5>
+                        <div class="d-flex">
+                            <label for="field3"><span>save <span class="required">:</span></span><input type="text"
+                                    id="save-input" class="input-field" name="field3" value="" />
+                                %</label>
+
+
+
+                            <button id="save-btn" class="btn btn-primary" type="button">Calculate</button>
+
+
+                        </div>
+                        <h5 class="text-center">saving Amount:<span id="saving-total">0</span> </h5>
+                        <h5 class="text-center">Remaining Balance:<span id="remaning-balance-total">0</span></h5>
+                    </form>
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
